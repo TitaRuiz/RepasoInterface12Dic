@@ -1,2 +1,8 @@
-package com.corenetworks.modelo;public class IvaGeneral {
+package com.corenetworks.modelo;
+
+public class IvaGeneral implements IImpuesto{
+    @Override
+    public double calcularImpuesto(Producto p1) {
+        return p1.getPrecio()*0.21;
+    }
 }
